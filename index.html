@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="./css/default.css">
+  <head>
+	  <title>0xUniversallis</title>
+	  <meta charset="utf-8" name="viewport" content="width=100%, height=100%, initial-scale=1" http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" http-equiv="Pragma" content="no-cache" http-equiv="Expires" content="-1" />
+  <link href="./css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script src="./js/main/funcs/protect.js"></script>
+  <script src="./js/main/funcs/elements.js"></script>
+  
+  <script src="./js/main/jqueries/jquery.min.js"></script>
+  <script src="./js/main/jqueries/jquery2.min.js"></script>
+  <script src="./js/main/jqueries/jquery-ui.min.js"></script>
+  
+<script type="text/javascript" src="./js/main/funcs/funcs.js"></script>
+</head>
+<body class="dark-mode">
+<p style='float: left; padding-bottom: 20px;margin-top: -1.7%;'>
+<p></p>
+<button onclick="onelement1()">Economy</button>
+<span>&nbsp;</span>
+<button onclick="savePositionsToJson()">Save Positions</button>
+<input type="file" id="jsonFileInput" onchange="handleFileUpload(event)">
+<span>&nbsp;</span>
+<a href="./index.html" rel="noopener noreferrer"><button>Home</button></a>
+<a href="https://github.com/c2V2ZW4K/portal/" target="_blank" rel="noopener noreferrer"><button>Github Repo</button></a>
+<button id="dark-mode-btn" onclick="toggleDarkMode()">Lights</button>
+</p>
+<div>
+
+<!-- Nuclear -->
+<div id="divResize1" style="position: absolute; left: 0.2%; top: 5%; height: 98%; width: 98%; display: none">
+<header>
+<button onclick="onelement2()">Latest Inflation Data</button>
+</header>
+<div id="divResize2" style="position: absolute; left: 1%; top: 5%; height: 75%; width: 31%; display: none">
+	<a href="https://www.bcb.gov.br/api/servico/sitebcb/ri/relatorios?quantidade=5" target="_blank" rel="noopener noreferrer"><button>Relatorios de Inflacao</button></a>
+	<a href="https://dadosabertos.bcb.gov.br/dataset/relatorios-de-inflacao-publicados" https://dadosabertos.bcb.gov.br/dataset/relatorios-de-inflacao-publicadostarget="_blank" rel="noopener noreferrer"><button>Dados Abertos</button></a>
+</div>
+
+<script type="text/javascript" src="./js/main/nuclear/nuclear.js"></script>
+<!-- Final Nuclear-->
+
+<div style="position: absolute; left: 105%; top: 1%;">	
+	
+	<button onclick="exibirReadme()">Portal Home</button>
+	
+</div>
+
+<div id="divResize24" style="position: absolute; left: 100%; top: 7%; height: 0%; width: 64%; display: none; font-family: Arial, sans-serif; font-weight: bold;">
+  <script src="./js/main/funcs/markdown.js"></script><script type="text/javascript" src="./js/main/funcs/showdown.min.js"></script><script>exibirReadme();</script>
+</div>
+
+
+</div>
+
+</body>
+<script type="text/javascript" src="./js/main/funcs/lights.js"></script>
+<script type="text/javascript" src="./js/main/funcs/mr.js"></script>
+<script type="text/javascript" src="./js/main/funcs/savepos.js"></script>
+</html>
